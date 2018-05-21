@@ -1,0 +1,109 @@
+/*文本颜色*/
+/*颜色属性被用来设置文字的颜色。*/
+body{
+    color:red
+}
+h1{
+    color:#ffffff;
+}
+h2{
+    color:rgb(255,0,0);
+}
+/*文本排列属性是用来设置文本的水平对齐方式。*/
+
+/*文本可居中或对齐到左或右,两端对齐.*/
+body{
+    text-align:center;
+}
+h1{
+    text-align:right;
+}
+h2{
+    text-align:left;
+}
+h3{
+    text-align:justify;
+}
+/*text-align设置为"justify"，每一行被展开为宽度相等，左，右外边距是对齐（如杂志和报纸）。*/
+
+
+
+/*text-decoration 属性用来设置或删除文本的装饰。*/
+/*从设计的角度看 text-decoration属性主要是用来删除链接的下划线：*/
+a{
+    text-decoration:none;
+}
+/*不建议强调指出不是链接的文本，因为这常常混淆用户。*/
+h1{
+    text-decoration:overline;
+}
+h2{
+    text-decoration:line-through;
+}
+h3{
+    text-decoration:underline;
+}
+
+/*文本转换属性是用来指定在一个文本中的大写和小写字母。*/
+h1{
+    text-transform:lowercase;
+}
+h2{
+    text-transform:uppercase;
+}
+h3
+{
+    text-transform:capitalize;
+    text-tarnsform:capitalize;
+    text-transform:capitalize;      /*first letter Uppercase*/
+}
+/*文本缩进属性是用来指定文本的第一行的缩进。*/
+p{
+    text-indent:50px;
+}
+/*如何增加或减少字符之间的空间。*/
+p{
+    letter-spacing:20px;
+}
+h2{
+    letter-spacing:-3px;
+}
+
+/*定在一个段落中行之间的空间*/
+/*大多数浏览器的默认行高约为110%至120%。*/
+p.small{
+    line-height:70%
+}
+p.big{
+    line-height:200%
+
+}
+/*如何改变元素的文本方向。*/
+p.ex{
+    direction:rtl;
+}
+/*增加一个段落中的单词之间的空白空间。*/
+
+p{
+    word-spacing:30px;
+}
+
+/*如何禁用一个元素内的文字环绕*/
+p{
+    white-space:nowrap;
+}
+/*如何设置文本的垂直对齐图像*/
+p{
+    vertical-align:text-top;  /*text and image top*/
+    vertical-align:text-bottom; /*text and image bottom*/
+}
+
+/*如何设置文本阴影*/
+
+h1
+{
+    text-shadow:2px 2px #ffffff;       /*x shadow y shadow   shadow color*/
+}
+
+
+

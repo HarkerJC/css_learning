@@ -1,0 +1,88 @@
+/*如果你的网站有很多个页面，你就需要使用分页来为每个页面做导航。*/
+
+/*以下实例演示了如何使用 HTML 和 CSS 来创建分页：*/
+
+ul.pagination{
+    display:inline-block;
+    padding:0;
+    margin:0;
+}
+ul.pagination li{
+    display:inline;
+}
+
+ul.pagination li a{
+    float:left;
+    color:black;
+    padding:8px 16px;
+    text-decoration:none;
+
+}
+
+
+/*如果点击当前页，可以使用 .active 来设置当期页样式，鼠标悬停可以使用 :hover 选择器来修改样式：*/
+ul.pagination li a.active{
+    color:white ;
+    background:#4caf50;
+}
+
+ul.pagination li a:hover:not(.active){
+    background-color:#ddd;
+}
+
+/*以使用 border-radius 属性为选中的页码来添加圆角样式*/
+ul.pagination li a{
+    border-radius:5px;
+}
+
+
+/*我们可以通过添加 transition 属性来为鼠标移动到页码上时添加过渡效果:*/
+ul.pagination li a{
+    transition:background-color 0.3s;
+}
+
+/*我们可以使用 border 属性来添加带边框分页*/
+ul.pagination li a{
+    border:1px solid #ddd;
+}
+
+.pagination li:first-child a{
+    border-top-bottom-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.pagination li:last-child a{
+    border-top-right-raduis:5px;
+    border-bottom-right-radius:5px;
+}
+
+/*你可以使用 margin 属性来为每个页码直接添加空格*/
+ul.pagination li a{
+    margin:0  5px;
+}
+/*我们可以使用 font-size 属性来设置分页的字体大小*/
+ul.pagination li a{
+    font-size:10px;
+}
+
+/*如果要让分页居中，可以在容器元素上 (如 <div>) 添加 text-align:center 样式：*/
+
+div.center{
+    text-align:center;
+}
+
+
+/*面包屑导航*/
+
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {color: green;}

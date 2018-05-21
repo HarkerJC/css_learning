@@ -1,0 +1,111 @@
+/*CSS中，有两种类型的字体系列名称：*/
+
+/*通用字体系列 - 拥有相似外观的字体系统组合（如 "Serif" 或 "Monospace"）*/
+
+/*特定字体系列 - 一个特定的字体系列（如 "Times" 或 "Courier"）*/
+
+
+/*font-family 属性设置文本的字体系列。*/
+
+/*font-family 属性应该设置几个字体名称作为一种"后备"机制，如果浏览器不支持第一种字体，他将尝试下一种字体。*/
+/*注意: 如果字体系列的名称超过一个字，它必须用引号，如Font Family："宋体"。*/ /*多个字体系列是用一个逗号分隔指明：*/
+
+p{
+    font-family:"Times New Roman",Times,serif;
+}
+
+/*字体样式*/
+/*主要是用于指定斜体文字的字体样式属性。*/
+/*正常 - 正常显示文本*/
+/*斜体 - 以斜体字显示的文字*/
+/*倾斜的文字 - 文字向一边倾斜（和斜体非常类似，但不太支持）*/
+p.normal{
+    font-style:normal;
+}
+p.italic{
+    font-style:italic;
+}
+p.oblique
+{
+    font-style:oblique;
+}
+
+
+/*font-size 属性设置文本的大小。*/
+
+/*能否管理文字的大小，在网页设计中是非常重要的。但是，你不能通过调整字体大小使段落看上去像标题，或者使标题看上去像段落。*/
+/*如果你不指定一个字体的大小，默认大小和普通文本段落一样，是16像素*/
+
+h1{
+    font-size:10px;
+}
+h2{
+    font-size:20px;
+}
+p{
+    font-size:70px;
+}
+/*为了避免Internet Explorer 中无法调整文本的问题，许多开发者使用 em 单位代替像素*/
+/*1em和当前字体大小相等。在浏览器中默认的文字大小是16px。*/
+h1{
+    font-size:2em;
+}
+h2 {
+    font-size:3em;
+}
+p{
+    font-size:5em;
+}
+/*所有浏览器的解决方案中，设置 <body>元素的默认字体大小的是百分比：*/
+body{
+    font-size:100%
+
+}
+h1{
+    font-size:10px;
+}
+h2{
+    font-size:20px;
+}
+p{
+    font-size:80px;
+}
+
+/*如何设置字体的加粗*/
+h1{
+
+    font-weight:normal;
+}
+h2{
+    font-weight:bold;
+}
+h3{
+    font-weight:lighter;
+}
+
+h4{
+    font-weight:400; /*400 等同于 normal，而 700 等同于 bold。*/
+}
+
+
+/*简写属性将字体属性设置在一个声明之内*/
+
+
+h5{font:15px arial,sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

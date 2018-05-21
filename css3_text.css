@@ -1,0 +1,131 @@
+CSS3 文本效果
+CSS3中包含几个新的文本特征。
+
+在本章中您将了解以下文本属性：
+
+text-shadow
+box-shadow
+text-overflow
+word-wrap
+word-break
+
+
+CSS3 的文本阴影
+CSS3 中，text-shadow属性适用于文本阴影。
+您指定了水平阴影，垂直阴影，模糊的距离，以及阴影的颜色
+
+h1{
+    text-shadow:5px 5px 5px #ffffff;
+}
+
+
+
+CSS3 box-shadow属性
+CSS3 中 CSS3 box-shadow 属性适用于盒子阴影
+
+
+div{
+
+    box-shadow:5px 5px 10px #ffffff;
+}
+
+
+
+接下来给阴影添加颜色
+
+div{
+    box-shadow:5px 5px #ffffff;
+}
+
+
+接下来给阴影添加一个模糊效果
+
+
+div{
+    box-shadow:5px 5px 10px #ffffff;
+}
+
+
+
+你也可以在 ::before 和 ::after 两个伪元素中添加阴影效果
+
+
+
+#boxshadow{
+    position:relative;
+    box-shadow:2px 4px 6px #ffffff;
+    padding:10px;
+    background-color:yellow;
+}
+
+#boxshadow img{
+
+    width:100%;
+    border:1px solid #8a4419;
+    border-style:inset;
+}
+
+#boxshadow:after{
+    content:'';
+    position|:absolute;
+    z-index:-1;
+    box-shadow:0px 15px 20px rgba(255,0,0,0.3);
+    width:70%;
+    left:15%;
+    height:100px;
+    bottom:0;
+
+
+    阴影的一个使用特例是卡片效果
+
+    div.card{
+        width:250px;
+        box-shadow:0 4px 8px 0 rgba(255,0,0,0.1);
+        text-align:center;
+
+    }
+
+
+CSS3 Text Overflow属性
+CSS3文本溢出属性指定应向用户如何显示溢出内容
+
+
+
+p.text1{
+
+overflow:hidden;
+ text-overflow:clip;
+}
+
+p.text2{
+    overflow:hidden;
+
+ text-overflow:ellipsis;
+}
+
+/*CSS3的换行*/
+/*如果某个单词太长，不适合在一个区域内，它扩展到外面：*/
+
+/*CSS3中，自动换行属性允许您强制文本换行 - 即使这意味着分裂它中间的一个字：*/
+
+p{word-wrap:break-word;}
+
+
+CSS3 单词拆分换行
+CSS3 单词拆分换行属性指定换行规则：
+
+CSS代码如下：
+
+
+
+p.test1{
+word-break:keep-all;
+}
+
+p.test2{
+word-break:break-all;
+
+}
+
+
+

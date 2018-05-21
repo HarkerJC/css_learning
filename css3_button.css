@@ -1,0 +1,195 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+我们可以使用 background-color 属性来设置按钮颜色:
+
+.button1{background-color:#0000ff;}
+
+/*我们可以使用 font-size 属性来设置按钮大小:*/
+
+.button1{font-size:10px;}
+
+
+/*我们可以使用 border-radius 属性来设置圆角按钮:*/
+
+.button1{border-radius:10px;}
+
+/*我们可以使用 border 属性设置按钮边框颜色:*/
+
+
+.button1{border:1px solid blue;}
+
+
+
+/*我们可以使用 :hover 选择器来修改鼠标悬停在按钮上的样式。*/
+
+/*提示: 我们可以使用 transition-duration 属性来设置 "hover" 效果的速度:*/
+
+
+
+.button{
+    transition-duration:0.4s;
+    -webkit-transition-duration:0.4s;
+}
+.button:hover{
+    background-color:#4CAF50;
+    color:white;
+}
+
+
+
+可以使用 box-shadow 属性来为按钮添加阴影
+.button1{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/*我们可以使用 opacity 属性为按钮添加透明度 (看起来类似 "disabled" 属性效果)。*/
+
+                                                 /*提示: 我们可以添加 cursor 属性并设置为 "not-allowed" 来设置一个禁用的图片:*/
+
+.disabled{
+    opacity:0.6;
+    cursor:not-allowed;
+}
+
+
+/*默认情况下，按钮的大小有按钮上的文本内容决定( 根据文本内容匹配长度 )。 我们可以使用 width 属性来设置按钮的宽度:*/
+
+                                    /*提示: 如果要设置固定宽度可以使用像素 (px) 为单位，如果要设置响应式的按钮可以设置为百分比。*/
+
+.button1{width:25%}
+.button2{width:100%}
+
+
+/*移除外边距并添加 float:left 来设置按钮组:*/
+
+.button{
+    float:left;
+}
+
+
+/*我们可以使用 border 属性来设置带边框的按钮组*/
+
+
+.button{
+    float:left;
+    border:1px solid  green;
+}
+
+
+/*按钮动画*/
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*点击时添加 "波纹" 效果*/
+
+.button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+/*点击时添加 "压下" 效果:*/
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

@@ -1,0 +1,101 @@
+
+圆角图片:
+img{
+    border-radius:8px;
+}
+
+椭圆形图片:
+img{
+    border-radius:50%;
+}
+
+
+我们使用 border 属性来创建缩略图。
+
+img{
+    border:1px solid blue;
+    padding:5px;
+    border-radius:5px;
+}
+
+响应式图片
+响应式图片会自动适配各种尺寸的屏幕。
+
+实例中，你可以通过重置浏览器大小查看效果:
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+
+如何定位图片文本:
+
+.container{
+    position:relative;
+
+}
+
+.topleft{
+
+    position:absolute;
+    top:8px;
+    left:16px;
+    font-size:18px;
+}
+
+
+/*卡片式图片*/
+
+div.plariod{
+    width:80%;
+    background-color:white;
+    box-shadow:0px 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+
+}
+
+img{
+    width:100%;
+}
+div.container{
+    text-align:center;
+    padding:10px 20px;
+}
+
+
+
+/*图片滤镜*/
+/*CSS filter 属性用为元素添加可视效果 (例如：模糊与饱和度) 。*/
+
+                                    /*注意: Internet Explorer 或 Safari 5.1 (及更早版本) 不支持该属性。*/
+
+/*修改所有图片的颜色为黑白 (100% 灰度):*/
+
+img{
+    filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+}
+
+
+/*响应式图片相册*/
+
+.responsive{
+
+    padding:0 6px;
+    float:left;
+    width:24.99999%;
+}
+@media only screen and (max-width:700px)
+{
+.responsive{
+    width:49.99999%;
+    margin:6px 0;
+}
+}
+@media only screen and (max-width:500px)
+{
+    .responsive{
+        width:100%;
+    }
+}

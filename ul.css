@@ -1,0 +1,42 @@
+/*在HTML中，有两种类型的列表：*/
+
+/*无序列表 - 列表项标记用特殊图形（如小黑点、小方框等）*/
+       /*有序列表 - 列表项的标记有数字或字母*/
+/*使用CSS，可以列出进一步的样式，并可用图像作列表项标记*/
+
+/*list-style-type属性指定列表项标记的类型是*/
+ul.a{
+    list-style-type:circle;
+}
+ul.b{
+    list-style-type:square;
+}
+ol.a{
+    list-style-type:upper-roman;
+}
+ol.b{
+    list-style-type:lower-alpha;
+}
+
+
+/*列表项标记的图像，使用列表样式图像属性*/
+/*所有浏览器中显示并不相同，IE和Opera显示图像标记比火狐，Chrome和Safari更高一点点。*/
+ul{
+    list-style-image:url("test.png");
+}
+ul li{                                 /*all li in ul*/
+
+}
+
+/*个属性中可以指定所有的列表属性。这就是所谓的简写属性*/
+
+ul{
+    list-style:square url("test.png");
+}
+
+/*可以按顺序设置如下属性：*/
+
+/*list-style-type*/
+/*list-style-position (有关说明，请参见下面的CSS属性表)*/
+/*list-style-image*/
+/*如果上述值丢失一个，其余仍在指定的顺序，就没关系。*/

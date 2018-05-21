@@ -1,0 +1,98 @@
+/*这四个链接状态是：*/
+
+/*a:link - 正常，未访问过的链接*/
+         /*a:visited - 用户已访问过的链接*/
+                     /*a:hover - 当用户鼠标放在链接上时*/
+                               /*a:active - 链接被点击的那一刻*/
+a:link{
+    color:#000000
+}
+a:visited{
+    color:#00ff00
+}
+a:hover{
+    color:#ff00ff;
+}
+a:active{
+    color:#0000ff;
+}
+
+/*为若干链路状态的样式，也有一些顺序规则：*/
+
+/*a:hover 必须跟在 a:link 和 a:visited后面*/
+/*a:active 必须跟在 a:hover后面*/
+
+/*text-decoration 属性主要用于删除链接中的下划线：*/
+
+a:link{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+a:active{
+    text-decoration:none;
+}
+
+/*背景颜色属性指定链接背景色*/
+
+a:link{
+    background-color:#B2FF99;
+}
+a:visited{
+    background-color:#ffff85;
+}
+a:hover{
+    background-color:#ff704d;
+}
+a:active{
+    background-color:#ff704d;
+}
+
+/*different class link style*/
+
+a.one:link{
+
+}
+a.one:visited{
+
+}
+a.one:hover{
+
+}
+a.one:active{
+
+}
+a.three:link{
+
+}
+a.three:visited{
+
+}
+a.three:hover{
+
+}
+a.three:active{
+
+}
+
+
+
+/*结合若干CSS属性显示为方框*/
+
+a:link,a:visited{
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#98bf21;
+    width:120px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+}
+a:active,a:hover{
+    background-color:#7A991A;
+}

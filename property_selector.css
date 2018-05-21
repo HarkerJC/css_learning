@@ -1,0 +1,47 @@
+/*具有特定属性的HTML元素样式*/
+/*具有特定属性的HTML元素样式不仅仅是class和id。*/
+
+/*下面的例子是把包含标题（title）的所有元素变为蓝色*/
+[title]{
+    color:blue;
+}
+
+
+/*属性和值选择器*/
+/*下面的实例改变了标题title='runoob'元素的边框样式:*/
+
+[title=runoob]
+{
+    color:blue;
+}
+
+
+/*属性和值的选择器 - 多值*/
+           /*下面是包含指定值的title属性的元素样式的例子，使用（~）分隔属性和值:*/
+/*qian hou dou ke yi*/
+[title~=hello]{
+    color:blue;
+}
+
+/*面是包含指定值的lang属性的元素样式的例子，使用（|）分隔属性和值:*/
+
+/*zhi zhi neng zai qian*/
+[title|=en]
+{
+    color:blue;
+}
+
+
+/*表单样式*/
+/*属性选择器样式无需使用class或id的形式:*/
+
+
+input[type=text]
+{
+
+}
+
+input[type=button]
+{
+    
+}

@@ -1,0 +1,89 @@
+/*基本下拉菜单*/
+/*当鼠标移动到指定元素上时，会出现下拉菜单。*/
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px     rgba(0,0,0,0.2);
+    padding:12px 16px;
+    z-index:1;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+/*可以使用任何的 HTML 元素来打开下拉菜单，如：<span>, 或 a <button> 元素*/
+/*使用容器元素 (如： <div>) 来创建下拉菜单的内容，并放在任何你想放的位置上。*/
+
+                  /*使用 <div> 元素来包裹这些元素，并使用 CSS 来设置下拉内容的样式。*/
+
+/*.dropdown 类使用 position:relative, 这将设置下拉菜单的内容放置在下拉按钮 (使用 position:absolute) 的右下角位置。*/
+
+/*.dropdown-content 类中是实际的下拉菜单。默认是隐藏的，在鼠标移动到指定元素后会显示。 注意 min-width 的值设置为 160px。你可以随意修改它。 注意: 如果你想设置下拉内容与下拉按钮的宽度一致，可设置 width 为 100% ( overflow:auto 设置可以在小尺寸屏幕上滚动)。*/
+/*我们使用 box-shadow 属性让下拉菜单看起来像一个"卡片"。*/
+/*:hover 选择器用于在用户将鼠标移动到下拉按钮上时显示下拉菜单。*/
+
+
+
+
+/*个实例类似前面的实例，当我们在下拉列表中添加了链接，并设置了样式*/
+
+
+/* 下拉按钮样式 */
+
+.dropbtn{
+    background-color:#4caf50;
+    color:white;
+    padding:16px;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+}
+
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+
+
+/* 下拉内容 (默认隐藏) */
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover{
+    background-color:#f1f1f1;
+}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .drop-content{
+    display:block;
+}
+.dropdown:hover .dropbtn{
+    background-color:#3e4ef1;
+}
+
+/*如果你想设置右浮动的下拉菜单内容方向是从右到左，而不是从左到右，可以添加以下代码 right: 0;*/
+
+.dropdown-content
+{
+    position:absolute;
+    right:0;
+}
+
+

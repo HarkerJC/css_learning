@@ -1,0 +1,78 @@
+/*CSS3 转换可以可以对元素进行移动、缩放、转动、拉长或拉伸*/
+
+它是如何工作？
+转换的效果是让某个元素改变形状，大小和位置。
+
+您可以使用 2D 或 3D 转换来转换您的元素。
+
+
+
+
+2D 转换
+ 在本章您将了解2D变换方法：
+
+translate()
+rotate()
+scale()
+skew()
+matrix()
+
+
+
+/*translate()方法，根据左(X轴)和顶部(Y轴)位置给定的参数，从当前元素位置移动。*/
+
+div{
+    transform:translate(50px,50px);
+    -ms-transform:translate(50px,50px);
+    -webkit-transform:translate(50px,50px);
+}
+
+
+
+
+/*rotate()方法，在一个给定度数顺时针旋转的元素。负值是允许的，这样是元素逆时针旋转。*/
+div{
+    transform:rotate(30deg);
+    -ms-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+}
+
+
+/*scale()方法，该元素增加或减少的大小，取决于宽度（X轴）和高度（Y轴）的参数：*/
+div{
+    transform:scale(2,3);
+    -ms-transform: scale(2,3);
+    -webkit-transform:scale(2,3);
+}
+
+
+
+/*scale（2,3）转变宽度为原来的大小的2倍，和其原始大小3倍的高度。*/
+
+
+
+
+
+/*包含两个参数值，分别表示X轴和Y轴倾斜的角度，如果第二个参数为空，则默认为0，参数为负表示向相反方向倾斜。*/
+
+/*skewX(<angle>);表示只在X轴(水平方向)倾斜。*/
+/*skewY(<angle>);表示只在Y轴(垂直方向)倾斜。*/
+
+
+div{
+    transform:skew(20deg,30deg);
+    -ms-transform:skew(20deg,30deg);
+    -webkit-transform:skew(20deg,30deg);
+}
+
+
+/*matrix()方法和2D变换方法合并成一个。*/
+
+        /*matrix 方法有六个参数，包含旋转，缩放，移动（平移）和倾斜功能。*/\
+
+
+div{
+    transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+    -ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0)
+    -webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+}

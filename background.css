@@ -1,0 +1,54 @@
+/*background-color*/
+/*background-image*/
+/*background-repeat*/
+/*background-attachment*/
+/*!*background-position*!*/
+/*background-color 属性定义了元素的背景颜色.*/
+body{
+    background-color:#b0c4de;
+}
+h1{
+    background-color:rgb(255,0,0);
+}
+p{
+    background-color:red;
+}
+/*background-image 属性描述了元素的背景图像.*/
+body{
+    background-image:url("test.png");
+}
+
+/*background-image 属性会在页面的水平或者垂直方向平铺*/
+/*只在水平方向平铺 (repeat-x), 页面背景会更好些:*/
+body{
+    background-image:url("test.png");
+    background-repeat:repeat-x
+}
+/*让背景图像不影响文本的排版*/
+
+/*如果你不想让图像平铺，你可以使用 background-repeat 属性:*/
+body{
+    background-image:url("test.png");
+    background-repeat:no-repeat;
+}
+/*们可以改变图像的位置。*/
+
+/*可以利用 background-position 属性改变图像在背景中的位置:*/
+body{
+    background-image:url("test.png");
+    background-repeat:no-repeat;
+    background-position:right top;
+    background-attachment:fixed;
+
+}
+/*为了简化这些属性的代码，我们可以将这些属性合并在同一个属性中.*/
+
+/*背景颜色的简写属性为 "background":*/
+body{background:#ffffff url("test.png") no-repeat right top;}
+/*当使用简写属性时，属性值的顺序为：:*/
+
+/*background-color*/
+/*background-image*/
+/*background-repeat*/
+/*background-attachment*/
+/*background-position*/
